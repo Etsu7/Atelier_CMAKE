@@ -124,15 +124,15 @@ jobs:
       - name: Upload report as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: test-add-report
-          path: build/report.txt      
+          name: car-report
+          path: build/car_report.txt      
           retention-days: 14         
 
       - name: Job summary
         run: |
-          echo "### Résultat du test *add*" >> $GITHUB_STEP_SUMMARY
+          echo "### Résultat du test *car*" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Test terminé : voir artifact 'test-add-report'." >> $GITHUB_STEP_SUMMARY
+          echo "Test terminé : voir artifact 'car-report'." >> $GITHUB_STEP_SUMMARY
 
 
   Deployment:
