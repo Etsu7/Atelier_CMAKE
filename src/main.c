@@ -32,6 +32,12 @@ int main(int argc, char *argv[]){
 	}
 	else {printf("Erreur de parametres");}
 	}
+	if (argc == 3 && strcmp(argv[1], "car") == 0) {
+        double a = atof(argv[2]);
+        double r = _car(a);
+        printf("%lf", r);
+        return 0;
+    }
 	else {printf("Erreur de parametres");}
 	return 0;
 }
