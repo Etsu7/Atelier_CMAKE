@@ -117,9 +117,9 @@ jobs:
         run: |
           cd build
           set -e
-          echo "== Test car 5 ==" > report.txt
-          ./src/calculator car 5 | tee -a report.txt
-          echo "Exit code: $?" >> report.txt
+          echo "== Test car 5 ==" > car_report.txt
+          ./src/calculator car 5 | tee -a car_report.txt
+          echo "Exit code: $?" >> car_report.txt
 
       - name: Upload report as artifact
         uses: actions/upload-artifact@v4
