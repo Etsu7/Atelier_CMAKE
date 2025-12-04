@@ -47,8 +47,9 @@ jobs:
       - name: Job summary (facultatif mais pratique)
         run: |
           echo "### Résultat du test *add*" >> $GITHUB_STEP_SUMMARY
-          echo '' >> $GITHUB_STEP_SUMMARY
-          echo '
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Test terminé : voir artifact 'test-add-report'." >> $GITHUB_STEP_SUMMARY
+
 
 
   Test_Div:
